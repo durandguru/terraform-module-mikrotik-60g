@@ -8,6 +8,7 @@ resource "routeros_interface_w60g" "ap" {
   mode                   = var.mode
   password               = var.password
   put_stations_in_bridge = var.put_stations_in_bridge
+  region                 = var.region
   ssid                   = var.ssid
 }
 

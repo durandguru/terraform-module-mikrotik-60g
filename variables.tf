@@ -21,8 +21,9 @@ variable "put_stations_in_bridge" {
   default = "bridge"
 }
 
-# variable "region" {
-# }
+variable "region" {
+  default = "eu"
+}
 
 variable "ssid" {
 
