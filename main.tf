@@ -24,7 +24,8 @@ resource "routeros_interface_w60g_station" "stations" {
   for_each = {
     for k, v in var.stations : k => v
   }
-  name   = each.value.name
-  parent = each.value.parent
+  mac_address = each.value.mac_address
+  name        = each.value.name
+  parent      = each.value.parent
 
 }
